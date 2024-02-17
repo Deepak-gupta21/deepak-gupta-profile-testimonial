@@ -1,0 +1,113 @@
+/* TestiMonials.css */
+
+/* Adjust the styles for the testimonials section */
+.testimonials {
+  height: 65vh;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+
+/* Add your custom styles for testimonials */
+.testimonial-container {
+  margin-top: 6%;
+}
+.carousel {
+  .carousel-status {
+    display: none; /* Hide the status */
+  }
+
+  .carousel-slider {
+    margin: 0 auto;
+  }
+
+  .slider-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Align items vertically */
+  }
+
+  .slide {
+    /* Your slide styles */
+    height: 330px;
+    width: 100%;
+  }
+
+  .slide .shadow-effect {
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    text-align: center;
+    border: 1px solid #ECECEC;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.10), 0 15px 12px rgba(0, 0, 0, 0.02);
+  }
+
+  .slide .shadow-effect p {
+    font-family: inherit;
+    font-size: 17px;
+    line-height: 1.5;
+    margin: 0 0 17px 0;
+    font-weight: 300;
+  }
+
+  .slide .testimonial-name {
+    /* Adjusted margin-top to properly align with the content */
+    margin-top: -1rem;
+    height: 125px;
+    background: linear-gradient(to right, #dc90de, #7aa3d6);
+    padding: 14px 35px;
+    border-radius: 12px;
+    line-height: 2px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0px 9px 18px rgba(0, 0, 0, 0.12), 0px 5px 7px rgba(0, 0, 0, 0.5);
+  }
+  .testimonial-name>p{
+    font-size: 14px;
+  }
+
+  .testimonial-name>h5{
+    font-weight: bolder;
+    font-size: 19px;
+  }
+
+  .control-dots {
+    position: absolute;
+
+    margin: -1px 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+}
+.control-arrow{
+  background: #dc90de !important ;
+  margin-top: 90px;
+  border-radius: 12px;
+  height: 70px;
+  }
+}
+
+
+/* Adjusted width and margin for the item */
+.item {
+  width: 30vw; /* Adjust this width as needed */
+  margin: 0 auto; /* To center the items */
+}
+
+@media (max-width: 768px) {
+  .item {
+    width: 80vw;
+    scale: 0.7;
+    margin-top: -1rem;
+  }
+  .item .shadow-effect p{
+ font-size: 1em;
+  }
+  .testimonial-name{
+    scale: 0.8;
+  }
+}
+

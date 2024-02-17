@@ -1,0 +1,95 @@
+/* UserForm.css */
+.toCenter{
+  text-align: center;
+}
+.toCenter>h1{
+  font-weight: bold;
+}
+
+.form-contain {
+  max-width: 400px;
+  margin: 70px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.input-grp {
+  margin-bottom: 15px;
+}
+
+.input-grp label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+
+.n-b{
+  font-size: 16px;
+  padding: 13px 26px;
+  text-align: center;
+  padding-bottom: 30px;
+  cursor: pointer;
+  width: 150px;
+  height: 2rem;
+  background: linear-gradient(to right, #dc90de, #7aa3d6);
+  }
+
+  .user{
+    width: 20rem;
+    height: 1.5rem;
+    padding: 0.3em;
+    outline:invert;
+    /* border-image: 19px solid var(--multi); */
+    border-image: linear-gradient(95deg, purple, orange) 1;
+    border-radius: 2px;
+    font-size: 16px;   
+}
+
+form
+{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  
+}
+
+textarea{
+height: 4rem!important;
+}
+
+.n-b::after{
+transition: transform .4s;
+}
+
+.n-b:hover {
+  background: white;
+  cursor: pointer;
+  color: orchid;
+  border: 1px solid orchid;
+}
+
+@media (max-width: 768px) {
+  .form-contain {
+  scale: 0.8;
+  }
+  form{
+    scale: 0.8;
+  }
+  .toCenter>h1{
+    font-size: 14px;
+  }
+}
+.review_Submitted{
+  color: green;
+}

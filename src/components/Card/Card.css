@@ -1,0 +1,68 @@
+.s-card{
+    width: 10rem;
+    height: 13rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    width: 10rem;
+    text-align: center;
+    background: rgba(255,255,255,0.26);
+    border:7px solid var(--lightblue);
+    box-shadow: var(--boxShadow);
+    border-radius: 20px;
+    padding: 0px 26px 2rem 26px;
+    
+}
+.s-card span:nth-child(2){
+    
+    font-size: 25px;
+    
+}
+
+.s-card span:nth-child(3){
+    color: var(--grey);
+    font-size: 14px;
+}
+
+.s-card >img{
+   scale: (0.1);
+   margin-bottom: -1.5rem;
+}
+
+.c-button{
+    background:#ffffff;
+    text-decoration: none;
+    box-shadow: 0px 19px 60px rgba(203, 160, 61, 0.08);
+    border-radius: 7px;
+    /* border: none; */
+    padding: 10px;
+    font-size: 16px;
+    color: var(--grey);
+    border-color: rgb(194, 230, 240);
+}
+.c-button:hover{
+    transform: scale(1.1); 
+    background-color: var(--lightblue);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,145 @@
+.services{
+    display: flex;
+    height: 77vh;
+    margin-bottom: 8rem;
+    margin-top: 9rem;
+    margin-bottom: 13rem;
+    padding: 0.1rem 3.5rem;
+}
+.awesome{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.awesome>:nth-child(1){
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.awesome>:nth-child(2){
+    color: var(--lightblue);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.awesome>:nth-child(3) li{
+    color: var(--grey);
+    font-size: 14px;
+   margin-top: 1rem;
+   text-align: left;
+}
+.awesome>:nth-child(3) p{
+    color: var(--grey);
+    font-size: 17px;
+   margin-top: 1rem;
+   margin-right: 5rem;
+   text-align: justify;
+   width: 29vw;
+}
+.s-button{
+    width: 8rem;
+    height: 2rem;
+    margin-top: 2rem;
+
+}
+
+
+
+.s-button{
+    border-radius: 34px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px 26px 10px 26px;
+    box-shadow: 0px 20px 24px 3px rgba(171, 225, 232, 0.42);
+    background-color: var(--lightblue);
+  }
+  
+  
+  .s-button::after{
+    transition: transform .4s;
+  }
+  
+  
+  
+  .s-button:hover{
+   background: white;
+   cursor: pointer;
+   transform: scale(1.2) ;
+   transition: transform .4s;
+   color: var(--lightblue);
+   border: 1px solid var(--lightblue) ;
+  }
+  
+
+
+
+
+
+.cards{
+    position: relative;
+}
+.cards>*{
+    position: absolute;
+}
+
+.s-blur1{
+left: 2rem;
+top: 8rem;
+}
+
+.s-blur2{
+    left: 1rem;
+    top: -2.4rem; 
+}
+
+.s-blur3{
+    left: 10rem;
+    top: 25rem; 
+}
+
+
+@media  screen and (max-width:480px) {
+   .services{
+    margin-top: -4rem;;
+    flex-direction: column;
+    gap: 5rem;
+    height: 66rem;
+    padding: 2rem;
+    margin-left: 1rem;
+}
+.awesome>:nth-child(1) {
+    font-size: 2.0rem;
+}
+.awesome>:nth-child(2) {
+    font-size: 1.8rem;
+}
+.awesome>:nth-child(3) p{
+    color: var(--grey);
+    font-size: 17px;
+   margin-top: 1rem;
+   text-align: justify;
+   margin-right:0;
+   width: 69vw;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    gap: 19rem !important;
+}
+.cards>*{
+    position: static;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+

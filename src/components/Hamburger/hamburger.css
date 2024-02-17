@@ -1,0 +1,143 @@
+.hamburger-wrapper {
+  position: relative;
+}
+
+.hamburger-checkbox {
+  display: none;
+}
+.hamburgerLogo {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(238, 235, 235);
+  height: 11vh;
+  z-index: 999;
+}
+.hamburger-label {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.hamburger-line {
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+  /* background: linear-gradient(to right, #a809ad, #307ad4); */
+  transition: transform 0.3s ease-in-out;
+}
+
+.hamburger-checkbox:checked ~ .hamburger-label .hamburger-line:nth-child(1) {
+  transform: translateY(10px) rotate(45deg);
+}
+
+.hamburger-checkbox:checked ~ .hamburger-label .hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-checkbox:checked ~ .hamburger-label .hamburger-line:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+
+.hamburger-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.hamburger-checkbox:checked ~ .hamburger-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.hamburger-menu-content {
+  text-align: center;
+}
+
+.hamburger-list {
+  padding: 3rem 0 0 0;
+  list-style-type: none;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 3rem 0 0 0;
+  list-style-type: none;
+  margin: 0;
+
+}
+
+.hamburger-item {
+  margin-bottom: 20px;
+}
+
+
+
+/* .hamburger-item a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+} */
+
+
+/* #contact-hamburger-btn{
+  margin-top: 2rem;
+}
+
+#contact-hamburger-btn a{
+  display: block;
+  color: white !important;
+  width: 140px;
+  height: 2rem;
+  background: linear-gradient(to right, #dc90de, #7aa3d6);
+  border-radius: 34px;
+  border: none;
+  color: #fff;
+  padding:11px 26px 11px 26px;
+  box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42);
+} */
+
+
+.hamburger-item a:hover {
+  color: #888;
+}
+
+.ham-btn a{
+  font-size: 1.2rem;
+  display: block;
+  color: white !important;
+  width: 140px;
+  height: 2rem;
+  background: linear-gradient(to right, #dc90de, #7aa3d6);
+  border-radius: 34px;
+  border: none;
+  color: #fff;
+  padding:11px 26px 1px 26px;
+  box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42);
+}
+@media  screen and (max-width:480px) {
+  .n-logo{
+    margin-left: -22rem;
+  }
+}

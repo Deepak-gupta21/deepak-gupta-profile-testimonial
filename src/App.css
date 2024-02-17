@@ -1,0 +1,82 @@
+:root
+{ 
+  --introcol:#eb7734;
+  --border-radius: 15px;
+  --border-width: 4px;
+  --darkmulti: linear-gradient(to right, #d829de, #2366b8);
+  --multi: linear-gradient(to right, #dc90de, #7aa3d6);
+  --orangemulti: linear-gradient(to right, #eddc20, #ef8514);
+  --yellow: #F5C32C;
+    --orange : #FCA61F;
+    --black : #1f222b;
+    --gray : #788097;
+    --blueCard : #DDF8FE;
+    --purple: rgb(238 210 255);
+    --darkpurple: rgb(147, 61, 200);
+    --boxShadow : 0px 19px 60px rgb(0 0 0 / 8%);
+    --orangeCard: rgba(252, 166, 31, 0.45);
+    --smboxShadow: -79px 51px 60px rgba(26, 10, 10, 0.08);
+    --blue:  #2747a8;
+    --lightblue:  #9fd3ed;
+    --lg: linear-gradient(to right, #ebecee35, #b1d7cf37);
+}
+
+.App{
+    /* padding: 0.1rem 3.5rem; */
+    overflow: hidden;
+    color: var(--black);    
+}
+
+
+.button{
+  border-radius: 34px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 10px 26px 10px 26px;
+  background: linear-gradient(180deg,#fdc50f 26.71%,#fb982f 99.36%);
+  box-shadow: 0px 20px 24px 3px rgba(251,161,40,0.42);
+  /* background: linear-gradient(to right,#de74bb 60%,#2f8e9b -5000000%); */
+}
+
+
+
+
+.button::after{
+  transition: transform .4s;
+}
+
+
+
+.button:hover{
+ background: white;
+ cursor: pointer;
+ transform: scale(1.2) ;
+ transition: transform .4s;
+ color: var(--orange);
+ border: 1px solid var(--orange) ;
+}
+
+/* @media  screen and (max-width:480px) {
+  .App{
+    padding: 0rem 1rem;
+  }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
